@@ -7,11 +7,7 @@
     main{
         flex-direction: column;
     }
-
-    #title{
-    flex-direction: column;  
-}
-
+    
     h2{
         font-size: 38px;
     }
