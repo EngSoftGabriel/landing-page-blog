@@ -1,4 +1,4 @@
-body{
+    body{
     background-color: rgb(34, 34, 34);
     color: white;
     font-family: poppinsregular;
@@ -12,6 +12,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;    
+}
+
+span{
+    color: rgb(239,191,4);
 }
 
 #title{
@@ -31,60 +35,33 @@ header{
     gap: 20px; 
 }
 
-li{
-    display: inline-block;
-    margin: 20px;
-}
 
-a{
-    color: white;
-}
-
-a:hover{
-    color: rgb(239,191,4);
-    transition: 0.3s all;
-}
-
-#faca-orcamento-btn{
-    border: 2px solid rgb(239,191,4);
-    padding: 10px;
-    border-radius: 20px;
-}
-
-#faca-orcamento-btn:hover{
-    background-color: rgb(239,191,4);
-    color: white;
-}
-
-h1{
-    font-weight: 200;
-}
 
 main{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     margin-top: 50px;
 }
 
 h2{
-    font-size: 50px;
+    font-size: 30px;
     line-height: 10px;
     font-family: poppinsmedium;
 }
 
-span{
-    color: rgb(239,191,4);
-}
-
-p{
-    line-height: 20px;
-    max-width: 500px;
-    font-family: poppinslight;
-}
-
-.card-visita{
+.whatsapp-sem-fundo{
     display: flex;
-    width: 600px;
+    width: 30px;
+    padding-left: 10px;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code-whattsapp{
     border-radius: 20px;
-    margin-left: 17%; 
+    width: 300px;
 }
