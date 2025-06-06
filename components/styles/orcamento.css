@@ -36,7 +36,11 @@ span{
     gap: 10px; 
 }
 
-
+ul{
+    display: flex;
+    justify-self: center;
+    padding-right: 50px;
+}
 
 main{
     display: flex;
