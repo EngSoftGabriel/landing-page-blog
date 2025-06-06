@@ -88,6 +88,12 @@
         margin: 20px auto;
     }
 
+    #subtext-orcamento{
+        font-size: 38px; 
+        line-height: 1.2; 
+        text-align: center;
+    }
+
    
     section {
         padding: 30px 20px; 
