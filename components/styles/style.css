@@ -14,10 +14,26 @@ header{
     align-items: center;    
 }
 
-
 #title{
-    flex-direction: column;
-    line-height: 10px;    
+    /* flex-direction: column; - Removido daqui, pois o #logo-and-title-container já controla o fluxo */
+    /* line-height: 10px; - Pode causar problemas no h1. Melhor ajustar o line-height diretamente no h1 ou usar margens. */
+    display: flex; /* Torna o #title um contêiner flexível */
+    flex-direction: column; /* Para que "Gabriel S.A" e "SoftTech" fiquem um abaixo do outro */
+    line-height: 0; /* Ajuste o line-height para um valor mais adequado, ou remova se o h1 tiver o seu próprio */
+}
+
+.logo{
+    /* display: flex; - Removido, já é um elemento flexível pelo pai */
+    width: 50px; /* Seu tamanho existente para a logo */
+    /* margin: 20px; - Removido, o gap do pai (#logo-and-title-container) vai controlar o espaçamento */
+    height: auto; /* Garante que a proporção da imagem seja mantida */
+    /* filter: invert(1); */ /* Se a imagem da engrenagem for escura e o fundo for escuro, adicione isso para clarear a logo */
+}
+
+#logo-and-title-container {
+    display: flex; /* Torna este contêiner flexível */
+    align-items: center; /* Alinha a logo e o título verticalmente ao centro */
+    gap: 20px; /* Adiciona 20px de espaço entre a logo e o #title */
 }
 
 li{
@@ -71,17 +87,9 @@ p{
     font-family: poppinslight;
 }
 
-img{
+.card-visita{
     display: flex;
-    width: 450px;
-    margin-left: 50%;
-}
-
-section {
-    width: 85%;
-    padding: 50px 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 20%; 
 }
