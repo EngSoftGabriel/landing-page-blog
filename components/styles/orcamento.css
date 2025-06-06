@@ -32,7 +32,7 @@ span{
 #logo-and-title-container {
     display: flex; 
     align-items: center;
-    gap: 20px; 
+    gap: 10px; 
 }
 
 
@@ -62,6 +62,8 @@ article{
 }
 
 .qr-code-whattsapp{
+    border: 3px solid black;
     border-radius: 20px;
     width: 300px;
+    margin-top: 40px;
 }
