@@ -1,28 +1,104 @@
 @media screen and (max-width: 768px){
 
-    header{
-        flex-direction: column;
+    /* Ajustes gerais para o corpo do documento */
+    body {
+        padding: 10px; /* Reduz o padding geral para aproveitar melhor o espaço em telas menores */
     }
 
-    main{
-        flex-direction: column;
-    }
-    
-    h2{
-        font-size: 38px;
-    }
-
-    form{
-        margin: 0 auto;
-        width: 100%;
+    /* Ajustes para o cabeçalho */
+    header {
+        flex-direction: column; /* Garante que os itens do cabeçalho se empilhem verticalmente */
+        padding: 15px 10px; /* Adiciona padding vertical e ajusta horizontalmente */
+        align-items: center; /* Centraliza os itens do cabeçalho horizontalmente quando empilhados */
     }
 
-    input{
-        align-self: center;
+    /* Ajustes para o contêiner da logo e título */
+    #logo-and-title-container {
+        flex-direction: row; /* Mantém a logo e o título lado a lado se houver espaço */
+        /* Se você quiser que a logo e o título também se empilhem em telas muito pequenas, use: flex-direction: column; */
+        gap: 10px; /* Reduz o espaçamento entre a logo e o título */
+        margin-bottom: 15px; /* Adiciona um espaço abaixo do grupo logo/título para separar de outros elementos do cabeçalho */
     }
 
-    ul{
-        text-align: center;
+    /* Ajuste para o tamanho da logo */
+    .logo {
+        width: 40px; /* Reduz o tamanho da logo para dispositivos móveis */
+    }
+
+    /* Ajustes para o contêiner do título (Gabriel S.A SoftTech) */
+    #title {
+        /* line-height: 0; no style.css é problemático. Vamos garantir que tenha um valor adequado aqui */
+        line-height: 1.2; /* Garante um espaçamento adequado entre "Gabriel S.A" e "SoftTech" */
+        text-align: center; /* Centraliza o texto do título se necessário */
+    }
+
+    /* Ajustes para os h1 dentro do título */
+    h1 {
+        font-size: 1.8em; /* Reduz o tamanho da fonte do h1 para mobile */
+        margin: 5px 0; /* Adiciona uma pequena margem vertical para separar as linhas do título */
+    }
+
+    /* Ajustes para a lista de navegação (se você tiver uma, e.g., ul dentro do header) */
+    ul {
+        text-align: center; /* Centraliza o texto da lista */
+        padding: 0; /* Remove qualquer padding padrão de ul */
+        width: 100%; /* Garante que a lista ocupe toda a largura disponível */
+        margin-top: 15px; /* Adiciona margem acima da lista, se ela estiver abaixo do título */
+    }
+
+    /* Ajustes para os itens da lista de navegação */
+    li {
+        margin: 10px 0; /* Adiciona margem vertical para espaçar os itens da lista quando empilhados */
+        display: block; /* Faz com que cada item da lista ocupe sua própria linha */
+    }
+
+    /* Ajustes para os links da lista de navegação */
+    a {
+        padding: 8px 0; /* Adiciona padding aos links para facilitar o toque */
+        display: block; /* Faz com que o link preencha o espaço do li, tornando a área de clique maior */
+    }
+
+    /* Ajustes para o botão de orçamento */
+    #faca-orcamento-btn {
+        width: auto; /* Permite que o botão ajuste sua largura ao conteúdo */
+        margin-top: 15px; /* Adiciona espaço acima do botão, se ele estiver abaixo do título/navegação */
+        padding: 8px 18px; /* Ajusta o padding do botão para mobile */
+    }
+
+    /* Ajustes para o conteúdo principal */
+    main {
+        flex-direction: column; /* Mantém o empilhamento vertical do conteúdo principal */
+        align-items: center; /* Centraliza o conteúdo principal horizontalmente quando empilhado */
+        margin-top: 30px; /* Reduz a margem superior para mobile */
+    }
+
+    /* Ajustes para o título h2 */
+    h2 {
+        font-size: 38px; /* Mantém o tamanho da fonte que você já definiu */
+        line-height: 1.2; /* Crucial: Corrige o line-height muito baixo para garantir legibilidade */
+        text-align: center; /* Centraliza o texto do h2 */
+    }
+
+    /* Ajustes para parágrafos */
+    p {
+        max-width: 90%; /* Limita a largura do parágrafo para que o texto não fique muito esticado em telas largas */
+        text-align: center; /* Centraliza o texto do parágrafo */
+        margin-left: auto; /* Centraliza o elemento p */
+        margin-right: auto; /* Centraliza o elemento p */
+    }
+
+    /* Responsividade para o .card-visita */
+    .card-visita {
+        width: 90%; /* Remove a largura fixa de 600px e a torna responsiva */
+        margin: 20px auto; /* Centraliza o cartão horizontalmente e adiciona margem vertical */
+        /* Se o .card-visita tem filhos com display: flex, considere empilhá-los também: */
+        /* flex-direction: column; */
+    }
+
+    /* Ajustes para a seção */
+    section {
+        padding: 30px 20px; /* Reduz o padding para seções em telas menores */
+        width: 100%; /* Garante que a seção ocupe toda a largura disponível */
     }
 
 }
